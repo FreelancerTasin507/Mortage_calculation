@@ -1,0 +1,236 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 300px;
+  padding-right: 300px;
+background-color: #dbd2c5;
+  border-radius: 15px;
+}
+
+.calculator {
+  width: 50%;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  color: #333;
+}
+
+.parent-grp {
+  display: flex;
+  gap: 5%;
+}
+
+.div1,
+.div2 {
+  width: 47%;
+}
+
+.down-pay-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.down_left {
+  width: 70%;
+}
+
+.down_right {
+  width: 28%;
+}
+
+#reset {
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #f5f2ed;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#reset svg {
+  width: 13px;
+  transition: transform 0.6s ease-in-out, opacity 0.3s ease;
+}
+
+#reset:hover {
+  transform: scale(1.05);
+}
+
+#reset:hover svg {
+  transform: rotate(360deg);
+  opacity: 0.8;
+}
+
+.calculator-container {
+  text-align: center;
+  padding: 20px;
+  width: 50%;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-circle {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.skill {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+
+.outer {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  box-shadow: 6px 6px 10px -1px rgba(0, 0, 0, 0.15),
+    -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+}
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2),
+    inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7),
+    -0.5px -0.5px 0px rgba(255, 255, 255, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+}
+
+#number {
+  font-weight: 600px;
+  color: #555;
+  font-size: 26px;
+}
+
+circle {
+  fill: none;
+  stroke: #beb09e;
+  stroke-width: 20px;
+  stroke-dasharray: 560;
+  stroke-dashoffset: 560;
+  animation: anim 2s linear forwards;
+}
+
+.prograss_svg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 500px;
+}
+
+@keyframes anim {
+  100% {
+    stroke-dashoffset: 165;
+  }
+}
+.payment-details {
+  margin-top: 80px;
+  margin-bottom: 20px;
+}
+
+.payment-details ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.payment-details li {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 16px;
+}
+
+.payment-details .icon {
+  width: 15px;
+  height: 15px;
+  background-color: #d2b48c;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.share-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.share-buttons span {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.social-icons a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.social-icons a:hover {
+  color: #5a4630;
+}
